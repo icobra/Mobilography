@@ -1,0 +1,54 @@
+// Colors
+$main: #1F1F1F;
+$second: #525252;
+$border: #EFE5E5;
+$bg: #FDF7f7;
+$color: #F6E336;
+$icon_color: #C4C4C4;
+
+// Fonts
+$MainFont: 'Montserrat', sans-serif;
+$SecondFont: 'PT Serif', serif;
+
+// Titles
+@mixin post_card_title(){
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+@mixin tag_title(){
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@mixin block_heading(){
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+@mixin heading_h1(){
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+@mixin small_text(){
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@mixin post_entry(){
+    font-family: $SecondFont;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+@mixin heading_h2(){
+    font-size: 42px;
+    line-height: 1.5;
+    font-weight: bold;
+}
