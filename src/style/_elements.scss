@@ -158,3 +158,38 @@ h6{
         }
     }
 }
+
+// post-data
+.post-data{
+    @include small_text();
+
+    .views,
+    .star{
+        min-height: 20px;
+        padding-left: 20px;
+    }
+
+
+    .views{
+        background: url("images/view-icon-dark.svg") no-repeat left center;
+        background-size: 14px;
+    }
+
+    .star{
+        background: url("images/star-icon-color.svg") no-repeat left center;
+        background-size: 14px;
+    }
+
+    &.-opacity{
+        color: $icon_color;
+        
+        .views{
+            background: url("images/view-icon.svg") no-repeat left center;
+            background-size: 14px;
+        }
+        .star{
+            background: url("images/star-icon.svg") no-repeat left center;
+            background-size: 14px;
+        }
+    }
+}

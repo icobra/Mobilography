@@ -90,37 +90,59 @@ body{
     }
 }
 
-// post-data
-.post-data{
-    @include small_text();
 
-    .views,
-    .star{
-        min-height: 20px;
-        padding-left: 20px;
+// home-banner
+
+.home-banner{
+
+
+    .home-banner--row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 34px;
+        align-items: center;
+
     }
 
-
-    .views{
-        background: url("images/view-icon-dark.svg") no-repeat left center;
-        background-size: 14px;
+    h1{
+        font-size: 46px;
+        margin-bottom: 24px;
     }
 
-    .star{
-        background: url("images/star-icon-color.svg") no-repeat left center;
-        background-size: 14px;
+    .color-btn{
+        max-width: 210px;
     }
+}
 
-    &.-opacity{
-        color: $icon_color;
-        
-        .views{
-            background: url("images/view-icon.svg") no-repeat left center;
-            background-size: 14px;
+.home-popular{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 34px;
+
+    .block{
+
+        img{
+
         }
-        .star{
-            background: url("images/star-icon.svg") no-repeat left center;
-            background-size: 14px;
+
+
+        .over-data{
+
+            .title{
+                margin-bottom: 10px;
+
+
+                a{
+
+                    &:hover{}
+                }
+            }
+
+            .post-data{
+
+            }
+
         }
+
     }
 }
