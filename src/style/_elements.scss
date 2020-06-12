@@ -40,19 +40,27 @@ h6{
     max-width: 400px;
     width: auto;
     height: 48px;
-    padding: 0 30px;
     background: $color;
     @include br_small();
     text-align: center;
     @include small_text();
     line-height: 48px;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     word-spacing: .5px;
     color: $main;
+    box-shadow: 1px 1px 12px #DAC826;
+    transition: .25s ease-in-out;
 
     a{
         color: $main;
+        padding: 0 30px;
+        display: block;
+    }
+
+    &:hover{
+        box-shadow: 2px 2px 24px #DAC826; 
     }
 }
 
@@ -130,4 +138,23 @@ h6{
 
 .trn{
     transition: .25s ease-in-out;
+
+    a {
+       transition: .25s ease-in-out;
+
+    }
+}
+
+.posrealtive{
+    position: relative;
+}
+
+.paragraphs{
+
+    p{
+
+        &:not(:last-child){
+            margin-bottom: 24px;
+        }
+    }
 }

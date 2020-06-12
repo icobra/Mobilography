@@ -34,11 +34,11 @@ body{
 .main-header{
 
 
-    .container{
+    .main-header--row{
         padding: 24px 0;        
         border-bottom: 1px solid $border;
         display: grid;
-        grid-template-columns: max-content 1fr max-content;
+        grid-template-columns: 1fr max-content;
         grid-gap: 34px;
         align-items: center;
     }
@@ -52,13 +52,27 @@ body{
     }
 
     .main-header__nav{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        ul {
+            display: flex;
+        }
+
         li{
 
+            &:not(:last-child){
+                
+                margin-right: 40px; 
+            }
+
             a{
+                border-bottom: 1px solid transparent;
 
                 &:hover{
                     color: $second;
-                    border-bottom: 1px solid $second;
+                    border-color: $second;
                 }
             }
         }
