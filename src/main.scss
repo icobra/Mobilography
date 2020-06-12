@@ -178,16 +178,22 @@ body{
 // all-tags
 
 .all-tags--wrapper{
+    overflow-x: auto;
+    padding-bottom: 16px;
 
 }
 
 .all-tags{
     display: grid;
+    grid-template-columns:repeat(10, 1fr);
     grid-gap: 24px;
 
-    .block{
-        @include br_middle();
 
+    .block{
+
+        img{
+            @include br_middle();
+        }
 
         span{
             @include tag_title();

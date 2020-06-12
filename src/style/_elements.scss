@@ -198,3 +198,14 @@ h6{
         }
     }
 }
+
+// hover-block
+
+.hover-block{
+    transition: .25s ease-in-out;
+
+    &:hover{
+        transform: scale(1.005);
+        box-shadow: 0 2px 18px transparentize(#000, .85)
+    }
+}
