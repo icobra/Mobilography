@@ -1,6 +1,6 @@
-@import "src/style/_vars";
-@import "src/style/_reset";
-@import "src/style/_elements";
+@import "src/style/vars";
+@import "src/style/reset";
+@import "src/style/elements";
 
 body{
     font-family: $MainFont;
@@ -13,6 +13,7 @@ body{
     -webkit-appearance: none;
 }
 
+*,
 *:after,
 *:before{
     box-sizing: border-box;
@@ -30,34 +31,47 @@ body{
 
 // Header
 
-.header{
+.main-header{
 
 
     .container{
         padding: 24px 0;        
         border-bottom: 1px solid $border;
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        grid-gap: 34px;
+        align-items: center;
     }
 
     .main-header__logo{
-        img{
 
+        img{
+            display: block;
         }
     
     }
 
-    .main-headar__nav{
+    .main-header__nav{
         li{
-            a{
-                &:hover{
 
+            a{
+
+                &:hover{
+                    color: $second;
+                    border-bottom: 1px solid $second;
                 }
             }
         }
     }
-    .main-header__search-icon{
-        &:hover{
 
+    .main-header__search-icon{
+        width: 17px;
+        height: 17px;
+        background: url("images/search-icon.svg") no-repeat center;
+        background-size: contain;
+
+        &:hover{
+            opacity: .75;
         }
     }
-
 }
