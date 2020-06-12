@@ -1,0 +1,129 @@
+@import "_vars";
+// TO DO need import "_vars" ?
+
+.text-color-main{
+    color: $main;
+
+    a{
+       color: $main;
+    }
+}
+
+.text-color-second{
+    color: $second;
+
+    a{
+       color: $second;
+    }
+}
+
+.text-color-white{
+    color: #fff;
+
+    a{
+       color: #fff;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    @include heading_h1();
+    margin: 0;
+    padding: 0;
+}
+
+.color-btn{
+    max-width: 400px;
+    width: auto;
+    height: 48px;
+    padding: 0 30px;
+    background: $color;
+    @include br_small();
+    text-align: center;
+    @include small_text();
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: .5px;
+    color: $main;
+
+    a{
+        color: $main;
+    }
+}
+
+.br_small{
+    @include br_small();
+}
+
+.br_middle{
+    @include br_middle();
+}
+
+.br_circle{
+    @include br_circle();
+}
+
+.main-card-title{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: bold;
+
+    a{
+        color: $main;
+
+        &:hover{
+            color: $second;
+            border-bottom: 1px solid $second;
+        }
+    }
+    
+}
+
+.main-card-desc{
+    @include tag_title();
+    font-weight: 400;
+    color: $second;
+}
+
+.main-block-heading{
+    @include block_heading();
+    color: $main;
+    margin-bottom: 24px;
+}
+
+.mb24{
+    margin-bottom: 24px;   
+}
+
+.mb34{
+    margin-bottom: 34px;   
+}
+
+.mb78{
+    margin-bottom: 78px;   
+}
+
+.block-padding{
+    padding: 78px 0;
+}
+
+.font-medium{
+    font-weight: 500;
+}
+
+.font-semibold{
+    font-weight: 600;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+.bg{
+    background: $bg;
+}

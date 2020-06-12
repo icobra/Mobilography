@@ -52,3 +52,15 @@ $SecondFont: 'PT Serif', serif;
     line-height: 1.5;
     font-weight: bold;
 }
+
+@mixin br_small(){
+    border-radius: 2px;
+}
+
+@mixin br_middle(){
+    border-radius: 8px;
+}
+
+@mixin br_circle(){
+    border-radius: 100%;
+}

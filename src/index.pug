@@ -9,4 +9,20 @@ html
             wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,700;1,\
             400&display=swap" rel="stylesheet")
     body
-        h1 Hello Pug!
+        header(class="main-header mb34")
+            div(class="container")
+                div(class="main-header__logo")
+                    img(src="logo.svg" alt="")
+                nav(class="main-header__nav text-color-main font-bold")
+                  ul
+                    li
+                      a(href="#") Мобилография
+                    li
+                      a(href="#") советы
+                    li
+                      a(href="#") идеи
+                    li
+                      a(href="#") обработка
+                    li
+                      a(href="#") инструкции
+                button(class="main-header__search-icon")
