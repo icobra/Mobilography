@@ -206,6 +206,10 @@ h6{
 
     &:hover{
         transform: scale(1.005);
-        box-shadow: 0 2px 18px transparentize(#000, .85)
+        box-shadow: 0 1px 18px transparentize(#000, .9)
     }
+}
+
+font-14{
+    font-size: 14px;
 }
