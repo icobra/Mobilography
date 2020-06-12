@@ -207,3 +207,25 @@ body{
     }
 
 }
+
+// main-content-post
+
+.main-content-post{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 34px;
+
+
+    .block{
+
+
+        img{
+            @include br_middle();
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: middle;
+            object-position: middle; 
+        }
+    }
+}
