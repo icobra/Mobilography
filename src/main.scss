@@ -109,6 +109,10 @@ body{
         margin-bottom: 24px;
     }
 
+    .paragraphs{
+        max-width: 540px;
+    }
+
     .color-btn{
         max-width: 210px;
     }
@@ -120,8 +124,15 @@ body{
     grid-gap: 34px;
 
     .block{
+        display: inline-table;
         @include br_middle();
         overflow: hidden;
+
+        &:nth-child(1),
+        &:nth-child(3){
+            margin-top: -34px;
+
+        }
         
         img{
             display: block;
@@ -139,6 +150,14 @@ body{
             position: absolute;
             left: 0;
             top: 0;
+
+
+            .w{
+                padding: 0 14px;
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+            }
         
 
             .title{
@@ -147,14 +166,11 @@ body{
 
                 a{
 
-                    &:hover{}
+                    &:hover{
+                        opacity: .75;
+                    }
                 }
             }
-
-            .post-data{
-
-            }
-
         }
     }
 }
