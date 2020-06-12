@@ -174,3 +174,30 @@ body{
         }
     }
 }
+
+// all-tags
+
+.all-tags--wrapper{
+
+}
+
+.all-tags{
+    display: grid;
+    grid-gap: 24px;
+
+    .block{
+        @include br_middle();
+
+
+        span{
+            @include tag_title();
+            background: #fff;
+            @include br_middle();
+            padding: 0 7px;
+            position: absolute;
+            left: 8px;
+            bottom: 14px;
+        }
+    }
+
+}

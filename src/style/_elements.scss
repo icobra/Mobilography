@@ -101,7 +101,7 @@ h6{
 .main-block-heading{
     @include block_heading();
     color: $main;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .mb24{
@@ -147,6 +147,10 @@ h6{
 
 .posrelative{
     position: relative;
+}
+
+.overhidden{
+    overflow: hidden;
 }
 
 .paragraphs{
