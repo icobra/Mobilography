@@ -235,3 +235,70 @@ body{
         }
     }
 }
+
+//author-block--content
+
+.author-block{
+
+
+    .author-block--content{
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+
+
+        img{
+            width: 140px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 8px solid $border;
+            box-sizing: border-box;
+            box-shadow: 0 0 48px #C6B6B6;
+        }
+
+        .author-name{
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .social-link{
+            text-align: center;
+
+            a{
+                display: inline-block;
+                line-height: 24px;
+                grid-template-columns: 24px 1fr;
+                align-items: center;
+                grid-gap: 8px;
+                
+
+                &:hover{
+                    opacity: .75;
+                }
+            }
+
+            .icon{
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                margin-right: 8px;
+
+
+                &.-icon-instagram{
+                    background: url("images/instagram-icon.svg") no-repeat center;
+                    background-size: contain;
+                }
+            }
+        }
+
+        .main-card-desc{
+            text-align: center;
+        }
+
+        .color-btn{
+            max-width: 290px;
+            margin: 0 auto;
+        }
+    }
+}
