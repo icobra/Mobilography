@@ -166,6 +166,7 @@ h6{
 // post-data
 .post-data{
     @include small_text();
+    color: $main;
 
     .views,
     .star{
@@ -187,7 +188,20 @@ h6{
 
     .category{
         margin-left: 24px;
-        
+
+
+        a{
+            color: $main;
+            border-bottom: 1px solid transparent;
+            transition: .25s ease-in-out;
+
+
+            &:hover{
+                color: $second;
+                border-color: $second;
+            }
+        }
+
     }
 
     &.-opacity{
