@@ -225,7 +225,13 @@ body{
             -o-object-fit: cover;
             object-fit: cover;
             -o-object-position: middle;
-            object-position: middle; 
+            object-position: middle;
+            margin-bottom: 14px; 
+        }
+
+        .post-data{
+            margin: 12px 0;
+
         }
     }
 }
