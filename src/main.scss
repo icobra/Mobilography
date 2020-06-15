@@ -323,3 +323,48 @@ body{
         text-align: center;
     }
 }
+
+// Footer
+.main-footer{
+    margin-top: 70px;
+
+
+    .footer-menu{
+        text-align: center;
+
+        ul{
+            display: inline-flex;
+        }
+
+        li{
+            font-size: 14px;
+
+            &:not(:last-child){
+                margin-right: 54px;
+            }
+
+            a{
+                color: $main;
+                border-bottom: 1px solid transparent;
+
+            
+                &:hover{
+                    color: $second;
+                    border-color: $second;
+                }
+            }
+        }
+    }
+    .copyr{
+        padding: 34px 0;
+        border-top: 1px solid $border;
+
+        .copyr__content{
+            max-width: 520px;
+            text-align: center;
+            margin: 0 auto;
+            @include small_text();
+            font-weight: 400;
+        }
+    }
+}
