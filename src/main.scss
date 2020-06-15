@@ -120,7 +120,7 @@ body{
 
 .home-popular{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeaurlt(2, 1fr);
     grid-gap: 34px;
 
     .block{
@@ -300,5 +300,26 @@ body{
             max-width: 290px;
             margin: 0 auto;
         }
+    }
+}
+
+// author-quote
+
+.author-quote{
+    padding: 24px 20px;
+    background: linear-gradient(265.78deg, #F8A0A0 0.26%, #F8C4C4 100%);
+
+
+    .author-quote__text{
+        max-width: 460px;
+        margin: 0 auto;
+        padding-top: 42px;
+        background: url("images/quote.svg") no-repeat center top;
+        background-size: 30px;
+        font-family: $SecondFont;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
     }
 }
