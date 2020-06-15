@@ -163,6 +163,61 @@ h6{
     }
 }
 
+//post-data
+.post-data{
+    @include small_text();
+    color: $main;
+
+    .views,
+    .star{
+        min-height: 20px;
+        padding-left: 20px;
+    }
+
+
+    .views{
+        background: url("images/view-icon-dark.svg") no-repeat left center;
+        background-size: 14px;
+        margin-right: 24px;
+    }
+
+    .star{
+        background: url("images/star-icon-color.svg") no-repeat left center;
+        background-size: 14px;
+    }
+
+    .category{
+        margin-left: 24px;
+
+
+        a{
+            color: $main;
+            border-bottom: 1px solid transparent;
+            transition: .25s ease-in-out;
+
+
+            &:hover{
+                color: $second;
+                border-color: $second;
+            }
+        }
+
+    }
+
+    &.-opacity{
+        color: $icon_color;
+        
+        .views{
+            background: url("images/view-icon.svg") no-repeat left center;
+            background-size: 14px;
+        }
+        .star{
+            background: url("images/star-icon.svg") no-repeat left center;
+            background-size: 14px;
+        }
+    }
+}
+
 // hover-block
 
 .hover-block{
